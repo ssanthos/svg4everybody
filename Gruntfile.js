@@ -113,7 +113,7 @@ module.exports = function (grunt) {
 					src: 'lib/svg4everybody.js',
 					dest: 'dist/svg4everybody.legacy.js',
 					globalAlias: 'svg4everybody',
-					objectToExport: 'svg4everybody'
+					objectToExport: 'loadsvgexternal'
 				}
 			}
 		},
