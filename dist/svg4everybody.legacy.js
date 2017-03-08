@@ -34,8 +34,8 @@
         xhr._embeds = []), // add the svg and id as an item to the xhr embeds list
         xhr._embeds.push({
             id: id,
-            onloadcallback: function() {
-                onloadcallback(src);
+            onloadcallback: function(target) {
+                onloadcallback(target);
             }
         }), // prepare the xhr ready state change event
         loadreadystatechange1(xhr);
