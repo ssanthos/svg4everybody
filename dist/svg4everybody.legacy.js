@@ -22,7 +22,7 @@
                     var target = xhr._cachedTarget[item.id];
                     // ensure the cached target
                     target || (target = xhr._cachedTarget[item.id] = cachedDocument.getElementById(item.id)), 
-                    item.onloadcallback();
+                    item.onloadcallback(target);
                 });
             }
         }, // test the ready state change immediately
